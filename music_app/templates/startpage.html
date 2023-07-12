@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mini-project/style2.css">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent);
+}
+
+.main-head{
+    min-height: 10vh;
+}
+
+.head-button button{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative; left: 650px;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin: 0.8rem;
+
+}
+
+.head-button button:hover,
+.head-button button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.head-button button:hover {
+  transform: translateY(-1px);
+}
+
+.head-button button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+.head-button{
+    flex: 1 1 20rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.middle{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+}
+.middle h1{
+    margin: 1rem;
+    font-size: 60px;
+}
+.middle video{
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;  
+    background-position: center;
+    position: absolute;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspext-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="main-head">
+        <div class="head-button">
+            <button><a href="homepage">HOME PAGE</a></button>
+        </div>
+    </header>
+    <section>
+        <div class="middle">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="/media/video/edited audizi.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</body>
+</html>
